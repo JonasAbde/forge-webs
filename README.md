@@ -28,4 +28,3 @@ Siden er konfigureret til statisk export og kan deployes til **Cloudflare Pages*
 1. Kør `npm run build`
 2. Upload `out/`-mappen til Cloudflare Pages
 3. Sæt build-kommando til `npm run build` og output-mappe til `out`
-# CI test
