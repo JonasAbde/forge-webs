@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  turbopack: {
-    root: "/home/empir/forge-webs",
-  },
 };
 
 export default nextConfig;
