@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MobileNav from "./MobileNav";
 
 export const metadata: Metadata = {
   title: "Forge Webs — Professionelle hjemmesider til danske virksomheder",
@@ -57,12 +58,15 @@ export default function RootLayout({
                 Kontakt
               </a>
             </nav>
-            <a
-              href="/kontakt/"
-              className="rounded-lg bg-[#171717] px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-[#333] shadow-border"
-            >
-              Få tilbud
-            </a>
+            <div className="flex items-center gap-3">
+              <MobileNav />
+              <a
+                href="/kontakt/"
+                className="hidden rounded-lg bg-[#171717] px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-[#333] shadow-border sm:inline-block"
+              >
+                Få tilbud
+              </a>
+            </div>
           </div>
         </header>
         <main className="flex-1">{children}</main>
